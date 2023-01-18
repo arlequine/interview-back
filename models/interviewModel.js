@@ -3,7 +3,11 @@ const mongoose = require('mongoose');
 const { Schema, model } = mongoose;
 
 const interviewSchema = new Schema({
-  name: {
+  firstName: {
+    type: String,
+    required: true,
+  },
+  lastName: {
     type: String,
     required: true,
   },
@@ -11,14 +15,10 @@ const interviewSchema = new Schema({
     type: String,
     required: true
   },
-  schedule: {
-    type: String
-  },
-  github: {
+  country: {
     type: String,
     required: true
   }
-
 }, {
   versionKey: false,
   timestamps: true
