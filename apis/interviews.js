@@ -12,7 +12,7 @@ router.post('/', async (req, res) => {
     const newInterview = await createInterview(body);
     res.status(201)
     res.send({
-      message: 'Tu entrevista ha sido creada exitosamente, nos pondremos en contacto contigo a la brevedad',
+      message: 'Felicidades has cumplido con el reto!!!',
       data: newInterview
     })
   } catch (error) {
