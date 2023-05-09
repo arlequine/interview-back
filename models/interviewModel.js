@@ -3,11 +3,11 @@ const mongoose = require('mongoose');
 const { Schema, model } = mongoose;
 
 const interviewSchema = new Schema({
-  firstName: {
+  name: {
     type: String,
     required: true,
   },
-  lastName: {
+  shcedule: {
     type: String,
     required: true,
   },
@@ -16,6 +16,10 @@ const interviewSchema = new Schema({
     required: true
   },
   country: {
+    type: String,
+    required: true
+  },
+  github: {
     type: String,
     required: true
   }
